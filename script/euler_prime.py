@@ -23,8 +23,6 @@ def find_first_prime_position(digits:str, window_size:int)->None:
     print("not found!")
     return
 
-import time
-
 if __name__ == "__main__":
     start_time = time.time()
     # file name of euler's number

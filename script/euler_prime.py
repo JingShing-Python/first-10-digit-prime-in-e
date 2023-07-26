@@ -9,7 +9,7 @@ def is_prime(n):
             return False
     return True
 
-def find_first_prime_position(digits, window_size):
+def find_first_prime_position(digits:str, window_size:int)->None:
     # find first 10-digit prime
     # get content and digit that want to determine
     for i in range(len(digits) - window_size + 1):

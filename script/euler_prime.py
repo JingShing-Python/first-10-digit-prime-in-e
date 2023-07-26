@@ -1,3 +1,4 @@
+import time
 # google question
 # first 10-digit prime found in consecutive digits of e
 def is_prime(n):
@@ -22,7 +23,10 @@ def find_first_prime_position(digits:str, window_size:int)->None:
     print("not found!")
     return
 
+import time
+
 if __name__ == "__main__":
+    start_time = time.time()
     # file name of euler's number
     filename = "e_2mil.txt"
     with open(filename, "r") as file:
@@ -32,3 +36,5 @@ if __name__ == "__main__":
     # find 10-digit
     window_size = 10
     find_first_prime_position(digits, window_size)
+    end_time = time.time()
+    print("total time: " + str(end_time - start_time) + " seconds")
